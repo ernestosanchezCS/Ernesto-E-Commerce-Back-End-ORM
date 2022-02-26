@@ -24,28 +24,41 @@ AS A manager at an internet retail company I WANT a back end for my e-commerce w
 
 ## Demo Video
 
-![Demo Good ReadMe Generator]
-<video src='![Demo Good ReadMe Generator]' width=180/>
+[WATCH DEMO VIDEO HERE!](https://drive.google.com/file/d/1NOjgE2IRwyiSbk9x6LTywcplsb6dIEqp/view?usp=sharing)
 
 ## Screenshots
 
-![Screen Shot](https://.png)
-![Screen Shot](https://.png)
+![Screen Shot](./assets/images/allproducts.png)
+![Screen Shot](./assets/images/allcategories.png)
+![Screen Shot](./assets/images/alltags.png)
+![Screen Shot](./assets/images/postproduct.png)
 
 ## Installation
 
-This project uses 2 npm packages:
-
--   [axios](https://www.npmjs.com/package/axios)
--   [inquirer](https://www.npmjs.com/package/inquirer)
-    To install necessary dependencies, run the following command:
+This project uses npm packages:
 
 ```
 npm i
 ```
 
 ```
-npm i mysql2
+node ./seeds/index.js
+```
+
+```
+open your mysql by entering mysql -u root -p then entering password followed by
+```
+
+```
+source schema.sql
+```
+
+```
+finally run
+```
+
+```
+npm start
 ```
 
 ## Usage
@@ -53,21 +66,18 @@ npm i mysql2
 To run tests, run the following command:
 
 ```
+
 node index.js
+
 ```
 
 ## License
 
     License is MIT standard license.
 
-
 ## Contributing
 
 It is an open project and everyone can contribute - please send and email requesting to be added as a contributor
-
-## Tests
-
-There is no testing required
 
 ## Questions
 
