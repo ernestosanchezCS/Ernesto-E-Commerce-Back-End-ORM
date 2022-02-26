@@ -12,11 +12,11 @@ router.get("/", (req, res) => {
         include: [
             {
                 model: Category,
-                attributes: ["category_name"],
+                attributes: ["id", "category_name"],
             },
             {
                 model: Tag,
-                attributes: ["tag_name"],
+                attributes: ["id", "tag_name"],
             },
         ],
     })
@@ -107,7 +107,7 @@ router.put("/:id", (req, res) => {
             id: req.params.id,
         },
     })
-        .then((product) => {
+        .then((productTags) => {
             // find all associated tags from ProductTag
             return ProductTag.findAll({ where: { product_id: req.params.id } });
         })
